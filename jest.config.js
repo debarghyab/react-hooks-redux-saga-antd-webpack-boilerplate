@@ -72,14 +72,14 @@ module.exports = {
   // A map from regular expressions to module names that allow to stub out resources with a single module
   moduleNameMapper: {
     "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
-      "<rootDir>/src/__mocks__/fileMock.js",
-    "\\.(css|less)$": "<rootDir>/src/__mocks__/styleMock.js",
+      "<rootDir>/src/tests/mocks/fileMock.js",
+    "\\.(css|less)$": "<rootDir>/src/mocks/styleMock.js",
     "^@components(.*)$": "<rootDir>/src/components$1",
     "^@utils(.*)$": "<rootDir>/src/utils$1",
     "^@images(.*)$": "<rootDir>/src/images$1",
     "^@store(.*)$": "<rootDir>/src/store$1",
     "^@api(.*)$": "<rootDir>/src/api$1",
-    "^@mock(.*)$": "<rootDir>/src/__mocks__$1"
+    "^@mock(.*)$": "<rootDir>/src/mocks$1"
   },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
@@ -113,7 +113,7 @@ module.exports = {
   // restoreMocks: false,
 
   // The root directory that Jest should scan for tests and modules within
-  rootDir: "tests",
+  // rootDir: "tests",
 
   // A list of paths to directories that Jest should use to search for files in
   // roots: [
